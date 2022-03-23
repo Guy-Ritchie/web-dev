@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My First Basic Website | Welcome</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zen Kurenaido">
+		<!--
+			You import a google font [Using Google Fonts API] inside a <head> tag, and specify the name of the font inside the <link> tag like above.
+		-->
+	</head>
+	<style>
+		body{
+			position: relative;
+			background-color: black;
+		}
+		h1{
+			position: absolute;
+			color: crimson;
+			background-color: burlywood;
+			font-family: 'Zen Kurenaido',sans-serif;
+			margin-top: 15%;
+			margin-left: 35%;
+			border-style: solid;
+			border-width: 5px;
+			border-color: crimson;
+			padding: 10px 5px;
+			/*
+			margin-left: auto;
+			margin-top: auto;
+			*/
+		}
+		.back {
+			position: fixed;
+			padding: 0;
+			margin: 0;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: linear-gradient(#000000,#070A66,#3339E8,#5F8EED,#B1CAFC,#FCD7D8);
+		}
+		.star{
+			position: absolute;
+			background-color: white;
+			height: 10px;
+			width: 10px;
+			border-radius: 50%;
+			animation-iteration-count: infinite;
+		}
+		.star1{
+			margin-top: 7%;
+			margin-left: 77%;
+			animation-name: one;
+			animation-duration: 1s;
+		}
+		.star2{
+			margin-top: 3%;
+			margin-left: 54%;
+			animation-name: two;
+			animation-duration: 1s;
+		}
+		.star3{
+			margin-top: 5%;
+			margin-left: 62%;
+			animation-name: three;
+			animation-duration: 1s;
+		}
+		.moon{
+			position: absolute;
+			margin-top: 0%;
+			margin-left: 95%;
+			background-color: transparent;
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+			box-shadow: 10px 10px 0 0 white;	
+		}
+		.sun{
+			position: absolute;
+			margin-top: 1%;
+			margin-left: 2%;
+			background-color: #ED7839;
+			height: 45px;
+			width: 45px;
+			border-width: 5px;
+			border-radius: 50%;
+			border-style: solid;
+			border-color: #EDF516;
+			/*
+			animation-name: sun;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			*/
+		}
+		.guy{
+			position: absolute;
+			margin-top: 25%;
+			margin-left: 50%;
+			height: 200px;
+			width: 75px;
+			background-color: #FAC589;
+			border-style: solid;
+			border-color: black;
+			border-width: 5px;
+			/*
+			Gotta set animation properties for the guy -> waving guy.
+			*/
+		}
+		@keyframes one{
+			50%{
+				transform: scale(0.2);
+				opacity: 0.3;
+			}
+		}
+		@keyframes two{
+			45%{
+				transform: scale(0.2);
+				opacity: 0.3;
+			}
+		}
+		@keyframes three{
+			65%{
+				transform: scale(0.2);
+				opacity: 0.3;
+			}
+		}
+		/*
+		@keyframes sun{
+			20%{
+				transform: scale(0.75);
+				opacity: 0.5;
+			}
+			50%{
+				transform: scale(0.25);
+				opacity: 0.2;
+			}
+			80%{
+				transform: scale(0.75);
+				opacity: 0.5;
+			}
+		}
+		*/
+	</style>
+	<body>
+		<div class="back"></div>
+		<div class="star1 star"></div>
+		<div class="star2 star"></div>
+		<div class="star3 star"></div>
+		<div class="moon"></div>
+		<div class="sun"></div>
+		<div class="guy"></div>
+		<h1>Welcome to my Website, peeps!</h1>
+	</body>
+</html>
